@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" spellcheck="false" />
+        <button><img src="images/search.png" alt="" /></button>
+      </div>
+      <!-- error message incase of invaid city name -->
+      <div class="error">
+        <p>Invalid City Name</p>
+      </div>
+
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon" />
+        <!-- Temperature taken from API -->
+        <h1 class="temp"></h1>
+        <!-- city name taken from API -->
+        <h2 class="city"></h2>
+        <div class="details">
+          <!-- 1st column -->
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div>
+              <!-- humidity taken from API -->
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <!-- 2nd column -->
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div>
+              <!-- wind speed taken from API -->
+              <p class="wind"></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
